@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+h1 {
+	font-family: alegreya-sc, serif;
+} 
+#container {
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	background-color: #FFFFFF;
+}
+#header {
+	height: 120px;
+	line-height: 120px;
+	background-image: url(../images/background_pattern.png);
+	background-repeat: repeat;
+	background-position: center center;
+	background-color: rgba(28,117,188,0.2);
+}
+#header_text h1 {
+	font-family: alegreya-sc, serif;
+	font-size: 42px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	color: #003399;
+}
+#content {
+	min-height: 400px;
+	margin-top: 200px;
+	padding-bottom: 40px;
+}
+#content p {
+	text-align: center;
+	font-size: 18px;
+}
+#footer {
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-image: url(../images/background_pattern.png);
+	background-repeat: repeat;
+	background-position: center center;
+	background-color: rgba(28,117,188,0.2);	
+}
+#footer_text p {
+	text-align: center;
+	font-size: 12px;
+	color: #003399;
+}
