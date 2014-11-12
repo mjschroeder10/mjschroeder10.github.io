@@ -1,29 +1,126 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Megan J Schroeder</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script src="http://use.edgefonts.net/alegreya-sc.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Megan Schroeder">
+    <title>Home | Megan Schroeder</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
   </head>
-
   <body>
-    <div id="container">
-      <div id="header">
-        <div id="header_text">
-          <h1>Megan J Schroeder</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Megan Schroeder</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a href="./" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Motion Analysis</a></li>
+                <li><a href="#">Musculoskeletal Modeling</a></li>
+                <li><a href="#">Finite Element Analysis</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.linkedin.com/in/meganjschroeder" target="_blank"><img class="social-icon" src="images/LinkedIn.png" alt=""></a></li>
+            <li><a href="https://github.com/mjschroeder10" target="_blank"><img class="social-icon" src="images/GitHub.png" alt=""></a></li>
+          </ul>
         </div>
       </div>
-      <div id="content">
-        <p>Currently under construction -- please check back soon</p>
-      </div>
-      <div id="footer">
-        <div id="footer_text">
-          <p>&copy; Copyright by Megan J Schroeder 2014</p>
-        <div>
+    </nav>
+    <!-- JUMBOTRON -->
+    <div class="jumbotron" style="background-image: url(images/Home_jumbotron.png);">
+      <div class="container text-center">
+        <h1>Human Movement Data Scientist</h1>
       </div>
     </div>
+    <!-- CALLOUTS -->
+    <div class="container callout">
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="neutral" href="#motion-analysis">
+            <img class="img-circle" src="images/MotionAnalysis_callout.png" alt="">
+            <h2>Motion Analysis</h2>
+            <p>Calculating 3D joint kinematics, kinetics, and real-time muscle activity.</p>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a class="neutral" href="#musculoskeletal-modeling">
+            <img class="img-circle" src="images/OpenSim_featurette.png" alt="">
+            <h2>Musculoskeletal Modeling</h2>
+            <p>Assessing the contributions of individual muscles to dynamic movement patterns.</p>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a class="neutral" href="#finite-element-analysis">
+            <img class="img-circle" src="images/FEA_callout.png" alt="">
+            <h2>Finite Element Analysis</h2>
+            <p>Determining the effects of muscle loading on internal joint mechanics.</p>
+          </a>
+        </div>
+      </div>
+      <!-- FEATURETTES -->
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <a class="anchor" id="motion-analysis"></a>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Motion Analysis</br><span class="small text-muted">Real-time, high-speed tracking</span></h2>
+          <p class="lead">Cameras track the three-dimensional positions of markers attached to the body at a rate of 120 times per second. Advanced sensors record muscle activity as well as multi-axis forces.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/MotionAnalysis_featurette.png" alt="">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <a class="anchor" id="musculoskeletal-modeling"></a>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/OpenSim_featurette.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Musculoskeletal Modeling</br><span class="small text-muted">Dynamic simulations of human movement</span></h2>
+          <p class="lead">A full-body model, combined with actual movement data, characterizes the contributions of individual muscles.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <a class="anchor" id="finite-element-analysis"></a>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Finite Element Analysis</br><span class="small text-muted">Local, tissue-specific effects</span></h2>
+          <p class="lead">Subject-specific MR images are used to create an anatomically accurate three-dimensional model of the knee. Complex mathematical models simulate the mechanical behavior of biological tissues.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/FEA_featurette.png" alt="">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Megan Schroeder 2014</p>
+      </footer>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
-
 </html>
